@@ -1,15 +1,38 @@
-html {
+html 
+{
     font-family: 'Raleway', sans-serif;
 }
 
-body {
+body 
+{
     margin: 0px;
 }
 
-a {
+header 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+a 
+{
     color: inherit;
     text-decoration: none;
 }
-p{
+
+p
+{
     color: black;
+}
+
+#menuancre
+{
+    
+    border: 1px solid black;
+}
+
+#btnbooki 
+{
+    
+    border: 1px solid black;
 }
