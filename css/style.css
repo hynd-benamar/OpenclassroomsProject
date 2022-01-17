@@ -10,44 +10,89 @@ a {
 }
 p {
     color: black;
-    font-size: 16px;
+    font-size: 14px;
 }
-
-            /********** header ************/
+/*********** header *************/
 header {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 70px;
 }
 header ul {
     list-style: none; /* pour supprimer les puces */
     display: inline-flex;
 }
 li {
-    margin:0 10px 0 10px;
+    margin-left: 30px;
 }
 header nav a {
-    padding: 24px 15px 0 15px;
+    font-size: 20px;
+    padding: 15px 15px 0 15px;
     font-weight: 600; /* epaisseur de la police*/
 }
 header nav a:hover, /* survoler*/
 header nav a:focus { /*après le clic*/
-    padding-top: 22px;
+    padding-top: 14px;
     border-top: 2px solid #0065FC;
     color: #0065FC;
 }
 #btnbooki {
-    width: auto;
-    height: 40px;
-    margin: 5px 0 5px 20px;
+    height: 70px;
 }
-
-         /************ main ***********/
-
-main {
-    padding: 20px;
-}
+/*************** main *******************/
 h1{
     font-size: 16px;
+}
+#grey {
+    color: #F2F2F2;
+}
+/****************** MEDIA QUERIES *******************/
+/********** pour écran inférieur à 992px ************/
+@media screen and (max-width: 992px) and (min-width: 768px)
+{
+    header nav a {
+        padding: 35px 15px 3px 15px;
+    }
+    header nav a:hover, /* survoler*/
+    header nav a:focus { /*après le clic*/
+        padding-bottom: 3px;
+        border-bottom: 2px solid #0065FC;
+        border-top: none;
+        color: #0065FC;
+    }
+}
+/*********** pour écran inférieur à 768px ***********/
+@media all and (max-width: 768px) and (min-width: 468px)
+{
+    header {
+        flex-direction: column; 
+        justify-content: center;
+        height: 150px; 
+    }
+    #btnbooki {
+        height: 60px;
+        margin: 0 40% 0 40%;
+    }
+    header ul {
+        padding-inline-start: 0; 
+    }
+    #menuancre {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    li {
+        margin-left: 0;
+    }
+    header nav a {
+        font-size: 22px;
+        padding: 0 0 3px 0;
+    }
+    header nav a:hover, /* survoler*/
+    header nav a:focus { /*après le clic*/
+        padding-bottom: 3px;
+        border-bottom: 2px solid #0065FC;
+        border-top: none;
+        color: #0065FC;
+    }
 }
 
